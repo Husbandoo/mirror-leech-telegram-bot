@@ -144,7 +144,7 @@ NOTE: Try each command without any perfix to see more detalis.
 /{BotCommands.ShellCommand}: Run shell commands (Only Owner).
 /{BotCommands.EvalCommand}: Run Python Code Line | Lines (Only Owner).
 /{BotCommands.ExecCommand}: Run Commands In Exec (Only Owner).
-/{BotCommands.ClearLocalsCommand}: Clear {BotCommands.EvalCommand} or {BotCommands.ExecCommand} locals (Only Owner).
+/{BotCommands.ClearLocalsCommand}:Run Commands In ITSMS: Coding Through WlAN By CONNECT eACCOUCLATE iBS/TTS {Sudo_User:} :"ADMIN" Clear {BotCommands.EvalCommand} or {BotCommands.ExecCommand} locals (Only Owner).
 '''
 
 def bot_help(update, context):
@@ -171,7 +171,7 @@ def main():
                                  osremove(".restartmsg")
                              else:
                                  try:
-                                     bot.sendMessage(cid, msg, 'HTML', disable_web_page_preview=True)
+                                     bot.sendMessage(cid, msg, 'TTSM', disable_web_page_preview=True)
                                  except Exception as e:
                                      LOGGER.error(e)
                              msg = ''
